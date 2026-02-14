@@ -3,80 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Planeta | Trusted Eco-Reviews</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Happy Planeta | Authority Reviews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         :root { --green: #2d6a4f; --light: #fcfcfc; --dark: #1a1a1a; }
-        * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; background: var(--light); color: var(--dark); line-height: 1.6; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: var(--light); color: var(--dark); }
         
-        /* Navigation */
-        nav { background: white; padding: 15px 5%; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .logo { font-family: 'Playfair Display', serif; font-weight: 700; text-decoration: none; color: var(--dark); }
-        .nav-links a { margin-left: 15px; text-decoration: none; color: var(--dark); font-size: 0.8rem; }
+        /* Nav Bar */
+        nav { background: white; padding: 15px 5%; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; }
+        .logo { font-family: 'Playfair Display', serif; font-weight: 700; text-decoration: none; color: var(--dark); font-size: 1.2rem; }
+        .nav-links button { background: none; border: none; margin-left: 15px; cursor: pointer; font-size: 0.8rem; color: var(--dark); }
 
-        /* Sections */
-        section { padding: 60px 5%; max-width: 1000px; margin: 0 auto; border-bottom: 1px solid #eee; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; margin-bottom: 20px; }
-        h1 { font-size: 2.5rem; text-align: center; padding: 40px 0; }
-        
-        .cta { display: inline-block; background: var(--dark); color: white; padding: 12px 25px; text-decoration: none; border-radius: 4px; margin-top: 20px; }
-        .legal-box { background: #f5f5f5; padding: 20px; border-radius: 8px; font-size: 0.85rem; margin-top: 20px; }
+        /* Page Handling */
+        .page-content { display: none; padding: 60px 5%; max-width: 800px; margin: 0 auto; min-height: 80vh; }
+        .active { display: block; animation: fadeIn 0.3s; } /* This shows the current page */
 
-        footer { padding: 40px 5%; text-align: center; font-size: 0.8rem; color: #888; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        h1, h2 { font-family: 'Playfair Display', serif; margin-bottom: 20px; text-align: center; }
+        .legal-text { background: #fff; border: 1px solid #ddd; padding: 30px; border-radius: 8px; font-size: 0.9rem; }
+        footer { padding: 40px; text-align: center; font-size: 0.75rem; color: #888; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="#" class="logo">HAPPY PLANETA</a>
+        <a href="javascript:void(0)" onclick="showPage('home')" class="logo">HAPPY PLANETA</a>
         <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#how">Reviews</a>
-            <a href="#privacy">Privacy</a>
+            <button onclick="showPage('about')">About</button>
+            <button onclick="showPage('privacy')">Privacy</button>
         </div>
     </nav>
 
-    <section id="home">
-        <h1>Independent Reviews for a Sustainable Life</h1>
-        <p style="text-align: center;">We test products so you don't have to. Real data, no greenwashing.</p>
-        <center><a href="#about" class="cta">Learn Our Mission</a></center>
-    </section>
+    <div id="home" class="page-content active">
+        <h1>Independent Reviews for the Conscious Consumer</h1>
+        <p style="text-align: center;">Helping you discover sustainable products through research and transparency.</p>
+        <center><br><button onclick="showPage('about')" style="padding:10px 20px; background:#1a1a1a; color:white; border:none; border-radius:4px;">View Our Mission</button></center>
+    </div>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Happy Planeta was founded in 2026 to provide transparent, research-backed reviews of eco-friendly products. We believe that consumers deserve the truth about sustainability.</p>
-    </section>
+    <div id="about" class="page-content">
+        <h2>About Happy Planeta</h2>
+        <p>Founded in 2026, we are a team of researchers dedicated to fighting greenwashing. Our goal is to provide you with honest data so you can shop sustainably.</p>
+    </div>
 
-    <section id="how">
-        <h2>How We Review</h2>
-        <p>Our process involves 3 steps:</p>
-        <ul style="margin-left: 20px; margin-top: 10px;">
-            <li><strong>Selection:</strong> We choose products with verified certifications.</li>
-            <li><strong>Testing:</strong> We analyze durability and real-world performance.</li>
-            <li><strong>Transparency:</strong> We disclose all affiliate relationships.</li>
-        </ul>
-    </section>
-
-    <section id="privacy">
+    <div id="privacy" class="page-content">
         <h2>Privacy Policy</h2>
-        <div class="legal-box">
-            <p><strong>Data Collection:</strong> We do not sell your personal data. We collect minimal info (IP/Cookies) for site performance.</p>
-            <p><strong>Contact:</strong> For privacy concerns, email hello@happyplaneta.com.</p>
+        <div class="legal-text">
+            <p><strong>Effective Date:</strong> Feb 14, 2026</p><br>
+            <p>We respect your privacy. We do not sell data. We only use essential cookies to improve your experience and track affiliate referrals.</p>
+            <p><br>Contact: hello@happyplaneta.com</p>
         </div>
-    </section>
-
-    <section id="terms">
-        <h2>Terms & Disclaimer</h2>
-        <div class="legal-box">
-            <p>Content is for informational purposes only. We are not liable for external product defects. <strong>Affiliate Disclosure:</strong> We may earn a commission from links on this site.</p>
-        </div>
-    </section>
+    </div>
 
     <footer>
-        <p>&copy; 2026 Happy Planeta. All Rights Reserved.</p>
-        <p><a href="#home" style="color:#888;">Back to Top</a></p>
+        <p>&copy; 2026 Happy Planeta • <button onclick="showPage('privacy')" style="border:none; background:none; color:#888; text-decoration:underline;">Legal Disclosures</button></p>
     </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show the one we want
+            document.getElementById(pageId).classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
 
 </body>
 </html>
