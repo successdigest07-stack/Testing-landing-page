@@ -1,103 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Planeta | Independent Eco-Friendly Reviews</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyPlaneta | Research & Product Insights</title>
     <style>
-        :root { --green: #2d6a4f; --dark: #1a1a1a; --light: #fcfcfc; --border: #ececec; }
-        body { font-family: 'Inter', sans-serif; background: var(--light); color: var(--dark); margin: 0; line-height: 1.6; }
-        
-        /* Navigation */
-        nav { background: white; padding: 15px 5%; display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
-        .logo { font-family: 'Playfair Display', serif; text-decoration: none; color: var(--dark); font-weight: 700; font-size: 1.2rem; }
-        .nav-links a { margin-left: 15px; text-decoration: none; color: var(--dark); font-size: 0.85rem; font-weight: 600; }
-
-        /* Hero */
-        .hero { padding: 80px 5%; text-align: center; max-width: 900px; margin: 0 auto; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 20px; line-height: 1.1; }
-        .hero p { font-size: 1.1rem; color: #555; margin-bottom: 30px; }
-        .btn { display: inline-block; background: var(--dark); color: white; padding: 14px 28px; text-decoration: none; border-radius: 4px; font-weight: 600; }
-
-        /* Trust Bar */
-        .trust-bar { display: flex; justify-content: space-around; padding: 20px; background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #777; }
-
-        /* Categories Section */
-        .section { padding: 60px 5%; max-width: 1100px; margin: 0 auto; }
-        h2 { font-family: 'Playfair Display', serif; font-size: 2rem; text-align: center; margin-bottom: 40px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .card { background: white; border: 1px solid var(--border); padding: 30px; border-radius: 8px; text-align: center; transition: 0.3s; }
-        .card:hover { border-color: var(--green); }
-        .card h3 { font-family: 'Playfair Display', serif; margin-bottom: 10px; }
-
-        /* Research Section */
-        .research-box { background: #f0f4f2; padding: 50px 5%; border-radius: 12px; margin: 40px 0; }
-        .research-box h2 { text-align: left; margin-bottom: 20px; }
-
-        /* Footer */
-        footer { padding: 60px 5%; text-align: center; font-size: 0.8rem; color: #888; border-top: 1px solid var(--border); background: white; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+        header { background: #f8f9fa; padding: 60px 20px; text-align: center; border-bottom: 1px solid #eee; }
+        nav { background: #fff; padding: 15px; text-align: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        nav a { margin: 0 15px; text-decoration: none; color: #555; font-weight: 600; }
+        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        .section { margin-bottom: 40px; }
+        footer { background: #333; color: #fff; padding: 30px 20px; text-align: center; font-size: 0.9em; }
+        footer a { color: #fff; text-decoration: underline; margin: 0 10px; }
+        .contact-box { background: #f4f4f4; padding: 20px; border-radius: 8px; }
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="index.html" class="logo">HAPPY PLANETA</a>
-        <div class="nav-links">
-            <a href="about.html">About Us</a>
-            <a href="privacy.html">Privacy Policy</a>
-        </div>
-    </nav>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms</a>
+</nav>
 
-    <header class="hero">
-        <h1>Making Sustainability Simple and Transparent.</h1>
-        <p>We cut through the "greenwashing" to bring you honest, data-backed reviews on the products that matter for a cleaner future.</p>
-        <a href="#categories" class="btn">Browse Reviews</a>
-    </header>
+<header>
+    <h1>HappyPlaneta</h1>
+    <p>Empowering Consumers Through Rigorous Research & Honest Reviews</p>
+</header>
 
-    <div class="trust-bar">
-        <span>✓ Expert Tested</span>
-        <span>✓ 100% Independent</span>
-        <span>✓ No Sponsored Rankings</span>
+<div class="container">
+    <div class="section">
+        <h2>Our Mission</h2>
+        <p>At HappyPlaneta, we believe that making the right purchase shouldn't be a guessing game. Our team is dedicated to reviewing and researching products across various categories to provide you with data-backed insights.</p>
+        <p>We analyze specifications, user feedback, and market trends so you can make informed decisions with confidence.</p>
     </div>
 
-    <section class="section" id="categories">
-        <h2>Our Focus Areas</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Home & Living</h3>
-                <p>From non-toxic cookware to energy-efficient appliances.</p>
-            </div>
-            <div class="card">
-                <h3>Personal Care</h3>
-                <p>Biodegradable soaps, ethical skincare, and zero-waste kits.</p>
-            </div>
-            <div class="card">
-                <h3>Eco-Tech</h3>
-                <p>Solar gear and sustainable electronics for the modern home.</p>
-            </div>
-        </div>
-    </section>
+    <div class="section contact-box" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want us to research a specific category? Reach out to our team.</p>
+        <p><strong>Email:</strong> hello@happyplaneta.com</p>
+    </div>
+</div>
 
-    <section class="section">
-        <div class="research-box">
-            <h2>How We Research</h2>
-            <p>Every product featured on Happy Planeta goes through a 20-point inspection. We analyze supply chain transparency, carbon footprint reports, and third-party certifications like B-Corp and Fair Trade. <strong>Our loyalty is to the planet and the consumer, never the brand.</strong></p>
-        </div>
-    </section>
-
-    <section class="section" style="text-align: center; background: white; border-radius: 8px; border: 1px solid var(--border);">
-        <h3>Join the Conscious Community</h3>
-        <p>Get our monthly "Green Report" delivered to your inbox.</p>
-        <div style="margin-top: 20px;">
-            <input type="email" placeholder="Enter your email" style="padding: 10px; border: 1px solid #ccc; width: 250px; border-radius: 4px;">
-            <button class="btn" style="padding: 10px 20px; font-size: 0.8rem; margin-top: 0;">Subscribe</button>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Happy Planeta. All Rights Reserved.</p>
-        <p style="margin-top: 10px;"><a href="privacy.html" style="color: #888;">Privacy Policy</a> | <a href="about.html" style="color: #888;">About Our Process</a></p>
-    </footer>
+<footer>
+    <p>&copy; 2026 HappyPlaneta. All rights reserved.</p>
+    <p>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="terms.html">Terms and Conditions</a>
+    </p>
+</footer>
 
 </body>
 </html>
