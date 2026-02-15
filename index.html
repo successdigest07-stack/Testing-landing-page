@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HappyPlaneta | Research & Product Insights</title>
+    <title>HappyPlaneta | Smart Product Research & Reviews</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
-        header { background: #f8f9fa; padding: 60px 20px; text-align: center; border-bottom: 1px solid #eee; }
-        nav { background: #fff; padding: 15px; text-align: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        nav a { margin: 0 15px; text-decoration: none; color: #555; font-weight: 600; }
-        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        .section { margin-bottom: 40px; }
-        footer { background: #333; color: #fff; padding: 30px 20px; text-align: center; font-size: 0.9em; }
-        footer a { color: #fff; text-decoration: underline; margin: 0 10px; }
-        .contact-box { background: #f4f4f4; padding: 20px; border-radius: 8px; }
+        :root { --primary: #2c3e50; --accent: #27ae60; --text: #333; --light: #f9f9f9; }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); margin: 0; padding: 0; }
+        
+        /* Navigation */
+        nav { background: #fff; padding: 20px; text-align: center; border-bottom: 1px solid #eaeaea; sticky: top; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--primary); font-weight: 600; font-size: 0.95rem; }
+        nav a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        header { background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); padding: 80px 20px; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 15px; color: var(--primary); }
+        header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; color: #555; }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+        
+        /* How We Help Section */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px; }
+        .card { background: white; padding: 25px; border-radius: 10px; border: 1px solid #eee; text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .icon { font-size: 2rem; margin-bottom: 10px; }
+
+        /* Trust/Categories Section */
+        .info-section { background: var(--light); padding: 60px 20px; text-align: center; }
+        .trust-badge { display: inline-block; background: #fff; padding: 10px 20px; border-radius: 50px; border: 1px solid var(--accent); color: var(--accent); font-weight: bold; margin-bottom: 20px; }
+
+        /* Footer */
+        footer { background: var(--primary); color: white; padding: 50px 20px; text-align: center; }
+        footer a { color: #bdc3c7; text-decoration: none; margin: 0 10px; font-size: 0.9rem; }
+        footer a:hover { color: white; }
+        .footer-tagline { margin-bottom: 20px; opacity: 0.8; }
     </style>
 </head>
 <body>
@@ -26,30 +47,68 @@
 </nav>
 
 <header>
-    <h1>HappyPlaneta</h1>
-    <p>Empowering Consumers Through Rigorous Research & Honest Reviews</p>
+    <div class="trust-badge">⭐ Independent Reviews — No Paid Endorsements</div>
+    <h1>Make Smart Buying Decisions — Backed by In-Depth Product Research</h1>
+    <p>At HappyPlaneta, we test, study, and review products thoroughly so you know exactly what you’re getting — no guesswork, no confusion.</p>
 </header>
 
 <div class="container">
-    <div class="section">
-        <h2>Our Mission</h2>
-        <p>At HappyPlaneta, we believe that making the right purchase shouldn't be a guessing game. Our team is dedicated to reviewing and researching products across various categories to provide you with data-backed insights.</p>
-        <p>We analyze specifications, user feedback, and market trends so you can make informed decisions with confidence.</p>
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h2>How We Help You</h2>
+        <p>Our research methodology is designed to save you time and money.</p>
     </div>
 
-    <div class="section contact-box" id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or want us to research a specific category? Reach out to our team.</p>
-        <p><strong>Email:</strong> hello@happyplaneta.com</p>
+    <div class="grid">
+        <div class="card">
+            <div class="icon">🧪</div>
+            <h3>Deep Research</h3>
+            <p>We research product specs and real user feedback to find the truth.</p>
+        </div>
+        <div class="card">
+            <div class="icon">📊</div>
+            <h3>Objective Comparison</h3>
+            <p>We compare products side-by-side without brand bias.</p>
+        </div>
+        <div class="card">
+            <div class="icon">⭐</div>
+            <h3>Honest Pros/Cons</h3>
+            <p>Get clear pros, cons, and buying suggestions before you spend.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🛍️</div>
+            <h3>Right Decisions</h3>
+            <p>We help you make the right purchase decision the first time.</p>
+        </div>
     </div>
 </div>
 
+<section class="info-section">
+    <div class="container" style="padding: 0;">
+        <h2>Why Trust Us?</h2>
+        <p style="max-width: 800px; margin: 0 auto;">Our team spends hours analyzing product performance, industry specs, and user feedback so you get honest, balanced advice before buying anything. We are dedicated to trustworthy research — not sales. We are trusted by early readers for practical, actionable insights.</p>
+        
+        <h3 style="margin-top: 50px;">Upcoming Review Categories</h3>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+            <p>💻 Electronics</p>
+            <p>🏠 Home Products</p>
+            <p>🌿 Health & Beauty</p>
+            <p>🛠️ Outdoor Gear</p>
+        </div>
+    </div>
+</section>
+
 <footer>
-    <p>&copy; 2026 HappyPlaneta. All rights reserved.</p>
-    <p>
+    <div class="footer-tagline">
+        <strong>HappyPlaneta</strong><br>
+        Empowering consumers with data-driven research.
+    </div>
+    <p>Questions? Contact us: <strong>hello@happyplaneta.com</strong></p>
+    <div style="margin-top: 20px;">
+        <a href="about.html">About Us</a> | 
         <a href="privacy.html">Privacy Policy</a> | 
         <a href="terms.html">Terms and Conditions</a>
-    </p>
+    </div>
+    <p style="font-size: 0.8rem; margin-top: 30px; opacity: 0.6;">&copy; 2026 HappyPlaneta. All rights reserved.</p>
 </footer>
 
 </body>
